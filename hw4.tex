@@ -1,0 +1,112 @@
+\documentclass{article}
+\usepackage{CJK}
+\usepackage{graphicx}
+\usepackage[onlyps]{altfont}
+\usepackage[top=1in,bottom=1in,left=1.25in,right=1.25in]{geometry}
+\usepackage[colorlinks,linkcolor=yellow,anchorcolor=blue,citecolor=green]{hyperref}
+\newcommand{\ud}{\mathrm{d}}
+\begin{CJK}{UTF8}{gbsn}
+	\author{杨梓鑫\ \ 10级物理弘毅班}
+	\title{第四次计算物理作业}
+	\date{学号：2010301020023}
+	\begin{document}
+	\maketitle
+\section{Problem}
+	\noindent \sf *3.16 Investigate how a strange attractor is altered by small changes in one of the pendulum parameters. Begin by calculating the strange attractor in Figure 3.9. Then change either the drive amplitude or drive frequency by a small amount and observe the changes in the attractor.\\\\
+
+
+\section{Model}
+\noindent \sf The same driven nonlinear pendulum model as in the textbook:
+	\begin{eqnarray*}
+		\frac{\ud \omega}{\ud t} &=& -\frac{g}{l}\sin\theta - q\frac{\ud \theta}{\ud t} + F_D \sin(\Omega_Dt),\\
+		\frac{\ud \theta}{\ud t} &=& \omega.\\
+	\end{eqnarray*}
+
+
+\section{Initial Condition}
+	\noindent \sf As the textbook, we set all the fixed parameter as:
+	\begin{eqnarray*}
+\textsf{The amplitude of driving force \quad  } F_D&=&1.2\\
+\textsf{Gravitational acceleration  \quad } g&=&9.8\\
+\textsf{Friction coefficient  \quad  }q&=&0.5\\
+	\end{eqnarray*}
+And we will start with $\theta=0.2,\omega=0$.\\\\
+
+\newpage
+\section{Outcomes}
+Beginning by calculating the strange attractor in Figure 3.9, which means, $l=9.8$ and $\Omega_D=0.667$, we can get the similar figures as in the textbook:
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.55]{/home/alexandra/CP_Hw/Chap3/phase_space.pdf}
+\caption{The phase space of the pendulum}
+\end{figure}
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.55]{/home/alexandra/CP_Hw/Chap3/98_2_3.pdf}
+\caption{The $Poincar\acute{a}$ $section$ of the pendulum}
+\end{figure}
+\newpage
+So now it's time to give $l$ and $\Omega_D$ a slight change to observe the strange attractors. First let's range $l$ from $9.5$ to $10$, and fix $\Omega_D$ at $0.667$. But as we can see in Figure 3, there is really not much change between them, only a slight diffecence at some detail points.\\\\
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/95_2_3.pdf}
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/96_2_3.pdf}
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/97_2_3.pdf}
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/98_2_3.pdf}
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/99_2_3.pdf}
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/10_2_3.pdf}
+\caption{$l$ from $9.5$ to $10$, augment$=0.1$}
+\end{figure}
+\newpage
+Next, range $\Omega_D$ from $0.6$ to $0.7$, increasing $0.02$ everytime, and $l$ is fixed at $9.8$. In Figure 4 we can tell that the change of $\Omega_D$ is much more magnificent than $l$ does.\\\\
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/98_6.pdf}
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/98_62.pdf}
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/98_64.pdf}
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/98_66.pdf}
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/98_68.pdf}
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/98_7.pdf}
+\caption{$\Omega_D$ from $0.6$ to $0.7$, augment$=0.02$}
+\end{figure}
+\newpage
+In order to see more clearly the effect of $l$ on the strange attractor, we are going to stride a little bit larger than before, that is $l$ from $5$ to $12$, increasing $1$ everytime, and fix $\Omega_D$ at $0.667$. Now when $l=7,9,10$, the strange attractor is the similar shape as before, but in the middle where $l=8$, the strange attractor deshapes greatly almost to be linear and non-random again. And its phase space in Figure 6 is consistent with the observation above.\\
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.31]{/home/alexandra/CP_Hw/Chap3/5_2_3.pdf}
+\includegraphics[scale=0.31]{/home/alexandra/CP_Hw/Chap3/6_2_3.pdf}
+\includegraphics[scale=0.31]{/home/alexandra/CP_Hw/Chap3/7_2_3.pdf}
+\includegraphics[scale=0.31]{/home/alexandra/CP_Hw/Chap3/8_2_3.pdf}
+\includegraphics[scale=0.31]{/home/alexandra/CP_Hw/Chap3/9_2_3.pdf}
+\includegraphics[scale=0.31]{/home/alexandra/CP_Hw/Chap3/100_2_3.pdf}
+\includegraphics[scale=0.31]{/home/alexandra/CP_Hw/Chap3/11_2_3.pdf}
+\includegraphics[scale=0.31]{/home/alexandra/CP_Hw/Chap3/12_2_3.pdf}
+\caption{$l$ from $5$ to $12$, augment$=1$}
+\end{figure}
+\newpage
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.4]{/home/alexandra/CP_Hw/Chap3/phase_space_8.pdf}
+\caption{The phase space of the pendulum when $l=8$, $\Omega_D=0.667$}
+\end{figure}
+Thus, we narrow the scope again to $l=7.2$ to $9$, so now we know that the nearly linear area is happened from $l=7.8$ to $8.4$.
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.35]{/home/alexandra/CP_Hw/Chap3/7_2.pdf}
+\includegraphics[scale=0.35]{/home/alexandra/CP_Hw/Chap3/7_4.pdf}
+\includegraphics[scale=0.35]{/home/alexandra/CP_Hw/Chap3/7_6.pdf}
+\includegraphics[scale=0.35]{/home/alexandra/CP_Hw/Chap3/7_8.pdf}
+\caption{$l$ from $7.2$ to $7.8$, augment$=0.2$}
+\end{figure}
+\begin{figure}[htbp]
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/8.pdf}
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/8_2.pdf}
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/8_4.pdf}
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/8_6.pdf}
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/8_8.pdf}
+\includegraphics[scale=0.378]{/home/alexandra/CP_Hw/Chap3/9.pdf}
+\caption{$l$ from $8$ to $9$, augment$=0.2$}
+\end{figure}
+\end{CJK}
+\end{document}
+
